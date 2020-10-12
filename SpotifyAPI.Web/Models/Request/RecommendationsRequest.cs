@@ -67,7 +67,7 @@ namespace SpotifyAPI.Web
     /// DO NOT INCLUDE min_ IN THE KEY
     /// </summary>
     /// <value></value>
-    public Dictionary<string, string> Min { get; }
+    public Dictionary<string, string> Min { get; set; }
 
     /// <summary>
     /// Multiple values. For each tunable track attribute, a hard ceiling on the selected track attribute’s value can be provided.
@@ -76,7 +76,7 @@ namespace SpotifyAPI.Web
     /// DO NOT INCLUDE max_ IN THE KEY
     /// </summary>
     /// <value></value>
-    public Dictionary<string, string> Max { get; }
+    public Dictionary<string, string> Max { get; set; }
 
     /// <summary>
     /// Multiple values. For each of the tunable track attributes (below) a target value may be provided.
@@ -86,7 +86,7 @@ namespace SpotifyAPI.Web
     /// DO NOT INCLUDE target_ IN THE KEY
     /// </summary>
     /// <value></value>
-    public Dictionary<string, string> Target { get; }
+    public Dictionary<string, string> Target { get; set; }
 
     protected override void CustomEnsure()
     {
